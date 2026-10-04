@@ -1,0 +1,90 @@
+{
+  "title": "KJ Session Board Reference",
+  "notes": [
+    {
+      "id": "ref_note_text",
+      "title": "Idea",
+      "text": "短い要点を表示",
+      "type": "text",
+      "inline": "",
+      "language": "python",
+      "imageUrl": "",
+      "color": "#FFF2A8",
+      "x": 110,
+      "y": 190,
+      "w": 210,
+      "h": 150
+    },
+    {
+      "id": "ref_note_code",
+      "title": "Code",
+      "text": "詳細はダブルクリック",
+      "type": "code",
+      "inline": "import streamlit as st\n\nst.title(\"Hello\")\nst.write(\"KJ Session Board\")",
+      "language": "python",
+      "imageUrl": "",
+      "color": "#DDF4D2",
+      "x": 350,
+      "y": 190,
+      "w": 210,
+      "h": 150
+    },
+    {
+      "id": "ref_note_markdown",
+      "title": "Markdown",
+      "text": "表や解説を表示",
+      "type": "markdown",
+      "inline": "## Reference\n\n| Item | Value |\n|---|---|\n| Mode | View |\n| Action | Double click |",
+      "language": "markdown",
+      "imageUrl": "",
+      "color": "#DCEEFF",
+      "x": 760,
+      "y": 190,
+      "w": 210,
+      "h": 150
+    },
+    {
+      "id": "ref_note_mermaid",
+      "title": "Mermaid",
+      "text": "関係を図解する",
+      "type": "mermaid",
+      "inline": "flowchart LR\n    A[Idea] --> B[Structure]\n    B --> C[Presentation]",
+      "language": "mermaid",
+      "imageUrl": "",
+      "color": "#E9E0FF",
+      "x": 1000,
+      "y": 190,
+      "w": 210,
+      "h": 150
+    }
+  ],
+  "groups": [
+    {
+      "id": "ref_group_1",
+      "name": "① Create",
+      "noteIds": [
+        "ref_note_text",
+        "ref_note_code"
+      ],
+      "childGroupIds": []
+    },
+    {
+      "id": "ref_group_2",
+      "name": "② Present",
+      "noteIds": [
+        "ref_note_markdown",
+        "ref_note_mermaid"
+      ],
+      "childGroupIds": []
+    }
+  ],
+  "edges": [
+    {
+      "id": "ref_edge_1",
+      "source": "ref_group_1",
+      "target": "ref_group_2",
+      "label": "構造化して伝える",
+      "direction": "right"
+    }
+  ]
+}
