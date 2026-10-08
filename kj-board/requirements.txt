@@ -1,0 +1,2 @@
+# Streamlit Components v2 is required by kj_board_app.py.
+streamlit>=1.52.0,<2.0
